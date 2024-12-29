@@ -1,6 +1,7 @@
 //chức năng hiện part khi vừa load xong trang
 const init = () => {
   const parentParts = document.querySelectorAll(".part-parent");
+  const childNodes = document.querySelectorAll(".part-child");
   document.querySelectorAll(".part-parent").forEach((parentPart) => {
     parentPart.classList.remove("actived");
   });
@@ -8,6 +9,9 @@ const init = () => {
     childPard.classList.remove("actived");
   });
   parentParts.forEach((parentPart) => {
+    parentPart.classList.add("actived");
+  });
+  childNodes.forEach((parentPart) => {
     parentPart.classList.add("actived");
   });
 };
@@ -37,9 +41,15 @@ const searchFunction = (inputValue) => {
     //hiển thị ParentPart
     filteredParentParts.forEach((parentPart) => {
       parentPart.parentNode.classList.add("actived");
+      let ulElement = parentPart.parentNode.children[1];
+      let listItem = ulElement.querySelectorAll("li");
+      [...listItem].forEach((item) => {
+        item.classList.add("actived");
+      });
     });
     filteredChileParts.forEach((childPart) => {
       childPart.parentNode.parentNode.parentNode.classList.add("actived");
+      childPart.parentNode.classList.add("actived");
     });
   } else {
     init();
