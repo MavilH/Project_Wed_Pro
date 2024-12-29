@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
+    background-color: #FFF9F0;
     border-bottom: 10px solid #ccc;
   }
   
@@ -15,7 +15,7 @@
   }
   
   .logo img {
-    height: 400px;
+    height: 300px;
     width: auto;
   }
   
@@ -24,9 +24,9 @@
   }
 
   .name img {
-    height: 500px;
+    height: 250px;
     width: auto;
-    margin-right: 500px;
+    margin-right: 250px;
   }
   
   .menu {
