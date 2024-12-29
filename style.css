@@ -1,3 +1,44 @@
+
+.container {
+  height: 100vh;
+}
+.container-left {
+  border-right: 1px solid black;
+}
+.index-box {
+  margin-top: 2rem;
+}
+.search-input {
+  width: 80%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.search-input input {
+  height: 3.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+}
+.btn-search {
+  color: white;
+  background-color: #dba58a;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+}
+
+.part-parent,
+.part-child {
+  display: none;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3rem;
+}
+
+.part-parent.actived,
+.part-child.actived {
+  display: block;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -57,3 +98,4 @@
   .menu ul li a:hover {
     color: red; 
   }
+
