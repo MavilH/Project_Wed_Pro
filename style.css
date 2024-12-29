@@ -1,3 +1,4 @@
+
 .container {
   height: 100vh;
 }
@@ -37,3 +38,64 @@
 .part-child.actived {
   display: block;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF9F0;
+    border-bottom: 10px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left:200px; 
+  }
+  
+  .logo img {
+    height: 300px;
+    width: auto;
+  }
+  
+  .name{
+    align-items: center;
+  }
+
+  .name img {
+    height: 250px;
+    width: auto;
+    margin-right: 250px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: bold;
+    color: black; 
+    margin-right:300px;
+  }
+  
+  .menu ul li a:hover {
+    color: red; 
+  }
+
