@@ -1,3 +1,4 @@
+/* nút search */
 .container {
   height: 100vh;
 }
@@ -35,7 +36,9 @@
 .part-child.actived {
   display: block;
 }
+/* nút search */
 
+/* header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -95,8 +98,11 @@
 .menu ul li a:hover {
   color: red;
 }
+
+/* header */
+
+/* mục lục */
 .container-left {
-  border-right: 10px solid black;
   background-color: #f1f1f1;
   border-right: 1px solid #ddd;
   position: static;
@@ -161,4 +167,9 @@
 
 .index-part {
   margin-top: 15px;
+}
+/* mục lục */
+.toc a.clicked {
+  background-color: #4caf50;
+  display: block;
 }
