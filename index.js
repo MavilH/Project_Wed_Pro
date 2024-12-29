@@ -65,3 +65,23 @@ document.querySelector(".btn-search").addEventListener("click", (event) => {
   let inputValue = document.querySelector("#filter").value;
   searchFunction(inputValue);
 });
+
+//chức năng hiện đáp án khi click vào câu hỏi
+document.querySelector(".toc a").addEventListener("click", async (event) => {
+  event.target.preventDefault();
+  const data_file = event.target.data_file;
+  console.log(data_file);
+
+  const content = document.getElementById("content");
+  content.innerHTML = `<p class="loading">Loading...</p>`;
+  try {
+    let response = await fetch(`./data/content/${data_file}.html`);
+    if (response.ok) {
+      content.innerHTML = await response.text();
+    } else {
+      content.innerHTML = `<p class="loading">Answer not found</p>`;
+    }
+  } catch (error) {
+    content.innerHTML = `<p class="loading">Answer is not available</p>`;
+  }
+});
