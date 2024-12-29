@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 10px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left:200px; 
+  }
+  
+  .logo img {
+    height: 400px;
+    width: auto;
+  }
+  
+  .name{
+    align-items: center;
+  }
+
+  .name img {
+    height: 500px;
+    width: auto;
+    margin-right: 500px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: bold;
+    color: black; 
+    margin-right:300px;
+  }
+  
+  .menu ul li a:hover {
+    color: red; 
+  }
