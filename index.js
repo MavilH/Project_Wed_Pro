@@ -68,7 +68,7 @@ document.querySelector(".btn-search").addEventListener("click", (event) => {
 
 // Lấy tất cả các thẻ <a> có class "part-child-a"
 const links = document.querySelectorAll(".part-child-a");
-
+const linksParent = document.querySelectorAll(".part-parent-a");
 // Thêm sự kiện click cho mỗi thẻ <a>
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -76,6 +76,22 @@ links.forEach((link) => {
 
     // Lấy giá trị của thuộc tính data-part
     const file_Name = event.target.dataset.part;
+    //xóa clicked của các thẻ hiện tại
+    links.forEach((link) => {
+      link.classList.remove("clicked");
+      link.parentNode.parentNode.classList.remove("clicked");
+    });
+    linksParent.forEach((link) => {
+      link.classList.remove("clicked");
+    });
+    //thêm clicked cho thẻ đc nhấn
+    event.target.classList.add("clicked");
+    //hiện nó lên
+    console.log(event.target.parentNode.parentNode.classList.add("clicked"));
+    //thêm cho part lớn nữa
+    event.target.parentNode.parentNode.parentNode.children[0].classList.add(
+      "clicked"
+    );
 
     // Gửi yêu cầu AJAX để lấy nội dung file (ví dụ: sử dụng Fetch API)
     fetch(`./data/content/${file_Name}.html`) // Thay đổi phần mở rộng file nếu cần
@@ -91,15 +107,24 @@ links.forEach((link) => {
   });
 });
 
-const linksParent = document.querySelectorAll(".part-parent-a");
-
 // Thêm sự kiện click cho mỗi thẻ <a>
 linksParent.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
-
+    linksParent.forEach((link) => {
+      link.classList.remove("clicked");
+    });
+    links.forEach((link) => {
+      link.classList.remove("clicked");
+    });
     // Lấy giá trị của thuộc tính data-part
     const file_Name = event.target.dataset.part;
+    event.target.classList.add("clicked");
+    if (event.target.parentNode.children[1] !== undefined) {
+      event.target.parentNode.children[1].children[0].children[0].classList.add(
+        "clicked"
+      );
+    }
 
     // Gửi yêu cầu AJAX để lấy nội dung file (ví dụ: sử dụng Fetch API)
     fetch(`./data/content/${file_Name}.html`) // Thay đổi phần mở rộng file nếu cần
