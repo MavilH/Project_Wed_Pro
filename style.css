@@ -49,17 +49,17 @@
   border-bottom: 10px solid #ccc;
 }
 
-.co img{
+.co img {
   width: 672px;
   position: absolute;
   margin-top: -11.6%;
 }
-.co_2 img{
+.co_2 img {
   width: 550px;
   height: 250px;
   position: absolute;
   margin-left: 70.88888em;
-  
+
   margin-top: -14%;
 }
 .logo {
@@ -88,12 +88,12 @@
   margin-right: 250px;
 }
 
-.logo-team{
+.logo-team {
   margin-left: 10px;
   margin-top: -13%;
 }
 
-.tron_1 img{
+.tron_1 img {
   position: absolute;
   margin-left: -71em;
   margin-top: -2%;
@@ -102,7 +102,7 @@
   border-radius: 100%;
 }
 
-.tron_2 img{
+.tron_2 img {
   position: absolute;
   margin-left: -56em;
   margin-top: -17px;
@@ -110,7 +110,7 @@
   height: 210px;
 }
 
-.tron_3 img{
+.tron_3 img {
   position: absolute;
   margin-left: -39em;
   margin-top: -30px;
@@ -123,11 +123,10 @@
   margin-left: 45em;
   margin-top: -49px;
 }
-.hello a{
-  color: #7A3851;
- 
+.hello a {
+  color: #7a3851;
 }
-.hello h2{
+.hello h2 {
   font-size: 30px;
 }
 .menu {
@@ -233,6 +232,7 @@
   background-color: #4caf50;
   display: block;
 }
+/* footer */
 .custom-footer {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.9)),
     url("data/images/anh_nen.webp");
@@ -266,3 +266,4 @@
   max-height: 400px;
   margin: auto;
 }
+/*footer*/
