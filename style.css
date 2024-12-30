@@ -173,3 +173,36 @@
   background-color: #4caf50;
   display: block;
 }
+.custom-footer {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.9)),
+    url("data/images/anh_nen.webp");
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid #fcd34d; /* Accent màu vàng để tạo điểm nhấn */
+}
+
+.custom-footer a {
+  text-decoration: none;
+  color: #fcd34d; /* Màu vàng đồng nhất với hình ảnh */
+  transition: color 0.3s;
+}
+
+.custom-footer a:hover {
+  color: #ffe85c; /* Màu vàng sáng khi hover */
+}
+
+.social-links i {
+  margin-right: 5px;
+}
+
+.custom-footer p {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin: 5px 0;
+}
+
+.custom-footer .container {
+  max-width: 1200px;
+  max-height: 400px;
+  margin: auto;
+}
