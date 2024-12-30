@@ -66,16 +66,18 @@ document.querySelector(".btn-search").addEventListener("click", (event) => {
   searchFunction(inputValue);
 });
 
+// Lấy tất cả các thẻ a trong danh sách
+const links = document.querySelectorAll("ul a");
+
 //chức năng hiện đáp án khi click vào câu hỏi
 document.querySelector(".toc a").addEventListener("click", async (event) => {
-  event.target.preventDefault();
-  const data_file = event.target.data_file;
-  console.log(data_file);
+  const file_Name = event.target.dataset.part;
+  console.log(file_Name);
 
-  const content = document.getElementById("content");
+  const content = document.getElementById("content-block");
   content.innerHTML = `<p class="loading">Loading...</p>`;
   try {
-    let response = await fetch(`./data/content/${data_file}.html`);
+    let response = await fetch(`./data/answer/${file_Name}.html`);
     if (response.ok) {
       content.innerHTML = await response.text();
     } else {
