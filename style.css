@@ -40,6 +40,7 @@
 
 /* header */
 .header {
+  height: 30em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,28 +49,87 @@
   border-bottom: 10px solid #ccc;
 }
 
+.co img{
+  width: 672px;
+  position: absolute;
+  margin-top: -11.6%;
+}
+.co_2 img{
+  width: 550px;
+  height: 250px;
+  position: absolute;
+  margin-left: 70.88888em;
+  
+  margin-top: -14%;
+}
 .logo {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
+
   gap: 5px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
+  margin-top: -15%;
 }
 
 .logo img {
-  height: 300px;
+  height: 276px;
   width: auto;
 }
 
 .name {
   align-items: center;
+  margin-left: 20%;
+  margin-top: -15%;
 }
 
 .name img {
-  height: 250px;
+  height: 238px;
   width: auto;
   margin-right: 250px;
 }
 
+.logo-team{
+  margin-left: 10px;
+  margin-top: -13%;
+}
+
+.tron_1 img{
+  position: absolute;
+  margin-left: -71em;
+  margin-top: -2%;
+  width: 210px;
+  height: 191px;
+  border-radius: 100%;
+}
+
+.tron_2 img{
+  position: absolute;
+  margin-left: -56em;
+  margin-top: -17px;
+  width: 210px;
+  height: 210px;
+}
+
+.tron_3 img{
+  position: absolute;
+  margin-left: -39em;
+  margin-top: -30px;
+  width: 219px;
+  height: 191px;
+}
+
+.hello {
+  position: absolute;
+  margin-left: 45em;
+  margin-top: -49px;
+}
+.hello a{
+  color: #7A3851;
+ 
+}
+.hello h2{
+  font-size: 30px;
+}
 .menu {
   display: flex;
   align-items: center;
