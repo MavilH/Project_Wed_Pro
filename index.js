@@ -66,24 +66,51 @@ document.querySelector(".btn-search").addEventListener("click", (event) => {
   searchFunction(inputValue);
 });
 
-// Lấy tất cả các thẻ a trong danh sách
-const links = document.querySelectorAll("ul a");
+// Lấy tất cả các thẻ <a> có class "part-child-a"
+const links = document.querySelectorAll(".part-child-a");
 
-//chức năng hiện đáp án khi click vào câu hỏi
-document.querySelector(".toc a").addEventListener("click", async (event) => {
-  const file_Name = event.target.dataset.part;
-  console.log(file_Name);
+// Thêm sự kiện click cho mỗi thẻ <a>
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
 
-  const content = document.getElementById("content-block");
-  content.innerHTML = `<p class="loading">Loading...</p>`;
-  try {
-    let response = await fetch(`./data/answer/${file_Name}.html`);
-    if (response.ok) {
-      content.innerHTML = await response.text();
-    } else {
-      content.innerHTML = `<p class="loading">Answer not found</p>`;
-    }
-  } catch (error) {
-    content.innerHTML = `<p class="loading">Answer is not available</p>`;
-  }
+    // Lấy giá trị của thuộc tính data-part
+    const file_Name = event.target.dataset.part;
+
+    // Gửi yêu cầu AJAX để lấy nội dung file (ví dụ: sử dụng Fetch API)
+    fetch(`./data/content/${file_Name}.html`) // Thay đổi phần mở rộng file nếu cần
+      .then((response) => response.text())
+      .then((data) => {
+        // Cập nhật nội dung vào một phần tử có id là "content" (ví dụ)
+        const contentElement = document.getElementById("content-block");
+        contentElement.innerHTML = data;
+      })
+      .catch((error) => {
+        console.error("Error fetching file:", error);
+      });
+  });
+});
+
+const linksParent = document.querySelectorAll(".part-parent-a");
+
+// Thêm sự kiện click cho mỗi thẻ <a>
+linksParent.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+
+    // Lấy giá trị của thuộc tính data-part
+    const file_Name = event.target.dataset.part;
+
+    // Gửi yêu cầu AJAX để lấy nội dung file (ví dụ: sử dụng Fetch API)
+    fetch(`./data/content/${file_Name}.html`) // Thay đổi phần mở rộng file nếu cần
+      .then((response) => response.text())
+      .then((data) => {
+        // Cập nhật nội dung vào một phần tử có id là "content" (ví dụ)
+        const contentElement = document.getElementById("content-block");
+        contentElement.innerHTML = data;
+      })
+      .catch((error) => {
+        console.error("Error fetching file:", error);
+      });
+  });
 });
