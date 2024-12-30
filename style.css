@@ -230,6 +230,8 @@
 /* mục lục */
 .toc a.clicked {
   background-color: #4caf50;
+}
+.toc ul.clicked {
   display: block;
 }
 /* footer */
