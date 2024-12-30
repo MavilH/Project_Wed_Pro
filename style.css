@@ -158,17 +158,17 @@
     url("data/images/anh_nen.webp");
   background-size: cover;
   background-position: center;
-  border-top: 3px solid #fcd34d; /* Accent màu vàng để tạo điểm nhấn */
+  border-top: 3px solid white; /* Accent màu vàng để tạo điểm nhấn */
 }
 
 .custom-footer a {
   text-decoration: none;
-  color: #fcd34d; /* Màu vàng đồng nhất với hình ảnh */
+  color: white ; /* Màu vàng đồng nhất với hình ảnh */
   transition: color 0.3s;
 }
 
 .custom-footer a:hover {
-  color: #ffe85c; /* Màu vàng sáng khi hover */
+  color:white; /* Màu vàng sáng khi hover */
 }
 
 .social-links i {
@@ -186,4 +186,41 @@
   max-height: 285px;
   margin: auto;
 }
+.resources-list {
+  margin-top: 15px;
+}
+
+.resources-list li {
+  margin-bottom: 5px;
+}
+
+.resources-list a {
+  color: whitewhite; /* Màu vàng để đồng nhất */
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.resources-list a:hover {
+  color: white; /* Màu vàng sáng khi hover */
+}
+.community-list {
+  margin-top: 15px;
+}
+
+.community-list li {
+  margin-bottom: 5px;
+}
+
+.community-list a {
+  color: white; /* Màu vàng để đồng nhất */
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.community-list a:hover {
+  color: white ; /* Màu vàng sáng khi hover */
+}
+
 /*footer*/
