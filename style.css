@@ -29,7 +29,7 @@
   font-size: 1.7rem;
 }
 .btn-search {
-  color: rgb(165, 183, 245);
+  color: rgb(35, 50, 83);
   background-color: rgb(200, 217, 233);
   padding: 0.7rem 2rem;
   border-radius: 1rem;
@@ -110,7 +110,7 @@
   font-weight: 500;
 }
 .toc li a:hover {
-  background-color: #4caf50;
+  background-color: rgb(155, 168, 210);
   color: white;
 }
 
@@ -147,7 +147,7 @@
 }
 /* mục lục */
 .toc a.clicked {
-  background-color: #4caf50;
+  background-color: rgb(155, 168, 210);
 }
 .toc ul.clicked {
   display: block;
@@ -163,12 +163,12 @@
 
 .custom-footer a {
   text-decoration: none;
-  color: white ; /* Màu vàng đồng nhất với hình ảnh */
+  color: white; /* Màu vàng đồng nhất với hình ảnh */
   transition: color 0.3s;
 }
 
 .custom-footer a:hover {
-  color:white; /* Màu vàng sáng khi hover */
+  color: white; /* Màu vàng sáng khi hover */
 }
 
 .social-links i {
@@ -220,7 +220,7 @@
 }
 
 .community-list a:hover {
-  color: white ; /* Màu vàng sáng khi hover */
+  color: white; /* Màu vàng sáng khi hover */
 }
 
 /*footer*/
