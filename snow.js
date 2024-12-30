@@ -7,7 +7,7 @@
     var position = [0, 0];
     var isOnscreen = false;
     var $element = $(
-      '<div class="snowflake" style="position: fixed; color: 255,255,255,0.97; text-shadow: rgba(255, 255, 255, 0.97) 1px 1px 2px;">&#10052;</div>'
+      '<div class="snowflake" style="position: fixed; color: rgb(246, 245, 250); text-shadow: rgb(246, 245, 250) 1px 1px 2px;">&#10052;</div>'
     );
 
     var updatePosition = function () {
