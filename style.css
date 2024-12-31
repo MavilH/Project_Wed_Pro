@@ -283,6 +283,9 @@ body {
     min-width: 100vw;
     min-height: 100%;
   }
+  .container-right{
+    width: calc(100% - 200px);
+  }
   .part-parent-a {
     width: 100%;
   }
