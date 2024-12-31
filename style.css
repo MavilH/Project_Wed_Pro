@@ -277,7 +277,7 @@ body {
   }
   /* main */
   .container-fluid {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     flex-direction: column;
   }
   .container-left {
