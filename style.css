@@ -278,9 +278,16 @@ body {
   /* main */
   .container-fluid {
     flex-wrap: nowrap;
+    flex-direction: column;
   }
   .container-left {
     min-width: 20rem;
+  }
+  .container-left {
+    min-width: 100vw;
+  }
+  .container-right {
+    min-width: 100vw;
   }
   .part-parent-a {
     width: 14rem;
