@@ -291,6 +291,9 @@ body {
   .container-right {
     min-width: 100vw;
   }
+  .container-right{
+    width: calc(100% - 200px);
+  }
   .part-parent-a {
     width: 100%;
   }
