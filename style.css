@@ -118,7 +118,6 @@ body {
   min-width: 25rem;
 }
 
-
 .toc {
   list-style-type: none;
   padding: 0;
@@ -271,6 +270,7 @@ body {
   .header {
     display: flex;
     justify-content: center;
+    min-width: 100vw;
   }
   .left-header,
   .right-header {
@@ -291,6 +291,7 @@ body {
   .footer-container {
     display: flex;
     justify-content: space-around;
+    min-width: 100vw;
   }
   .footer-container > div {
     width: 35rem;
