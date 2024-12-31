@@ -39,7 +39,6 @@ body {
   background-color: rgb(222, 232, 242);
   border-right: 4px solid rgba(22, 20, 20, 0.267);
   position: static;
-  /* overflow-y: auto; */
 }
 #content-block {
   padding-top: 20px;
@@ -111,6 +110,13 @@ body {
 /* header */
 
 /* mục lục */
+
+.container-left {
+  background-color: rgb(222, 232, 242);
+  border-right: 4px solid rgba(22, 20, 20, 0.267);
+  position: static;
+  min-width: 25rem;
+}
 
 .toc {
   list-style-type: none;
@@ -272,20 +278,20 @@ body {
   /* main */
   .container-fluid {
     flex-wrap: nowrap;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .container-left {
-    /* min-width: 20rem; */
-    min-width: 100vw;
+    min-width: 20rem;
+    /* min-width: 100vw;
+    min-height: 100%; */
+  }
+  #content-block {
     min-height: 100%;
   }
   .container-right {
-    min-width: 100vw;
-    min-height: 100%;
-  }
-  /* .container-right {
+    /* min-width: 100vw; */
     width: calc(100% - 200px);
-  } */
+  }
   .part-parent-a {
     width: 100%;
   }
