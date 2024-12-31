@@ -282,6 +282,9 @@ body {
   .container-left {
     min-width: 20rem;
   }
+  .container-right{
+    width: calc(100% - 200px);
+  }
   .part-parent-a {
     width: 14rem;
   }
