@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./data/content/code.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="min-width: 100%; width: 100%; padding: 0">
       <div class="header">
         <div class="left-header">
           <div class="caymuadong">
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="middle-header">
-          <div class="logo">
+          <div class="logo" style="width: 30rem">
             <a href=""
               ><img
                 src="./data/images/logoTrue.png"
@@ -321,63 +321,66 @@
           </div>
         </div>
       </div>
-      <footer class="custom-footer text-white text-center py-4 mt-auto">
-        <div class="container">
-          <div class="row">
-            <!-- Project Info -->
-            <div class="col-md-3">
-              <div class="footer-top">
-                <h3 class="text-uppercase">Project Info</h3>
-                <p class="mb-3">&copy; 2025 Project Web201c Group1.</p>
-              </div>
-              <div class="footer-bottom">
-                <a href=""><img src="./data/images/logo_funny.png" alt="" /></a>
-              </div>
-            </div>
 
-            <!-- Resources -->
-            <div class="col-md-3">
-              <h3 class="text-uppercase">Resources</h3>
-              <ul class="resources-list list-unstyled">
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Cheatsheets</a></li>
-                <li><a href="#">Code Challenges</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Workspaces</a></li>
-              </ul>
-            </div>
+      <footer
+        class="custom-footer text-white text-center py-4 mt-auto"
+        style="min-height: fit-content"
+      >
+        <div class="row footer-container">
+          <!-- Project Info -->
+          <div class="project-info col-md-3">
+            <div class="footer-top">
+              <h3 class="text-uppercase">Project Info</h3>
+              <p class="mb-3">&copy; 2025 Project Web201c Group1</p>
 
-            <!-- Contact Us -->
-            <div class="col-md-3">
-              <h3 class="text-uppercase">Contact Us</h3>
-
-              <p>
-                Email:
-                <a
-                  href="mailto:hoangduy2903@gmail.com"
-                  class="text-white"
-                  font-size="1rem"
-                  >hoangduy2903@gmail.com</a
-                >
-              </p>
-              <p font-size="1rem">Phone: 079-975****</p>
             </div>
-
-            <!-- About Us -->
-            <div class="col-md-3">
-              <h3 class="text-uppercase">About Us</h3>
-              <p>Team Members:</p>
-              <ul class="list-unstyled">
-                <li>Lê Hoàng Duy</li>
-                <li>Huỳnh Bá Hiếu</li>
-                <li>Phạm Huỳnh Quốc Huy</li>
-                <li>Dương Minh Kiệt</li>
-                <li>Lê Anh Vũ</li>
-              </ul>
+            <div class="footer-bottom">
+              <a href=""><img src="./data/images/logo_funny.png" alt="" /></a>
             </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="resources col-md-3">
+            <h3 class="text-uppercase">Resources</h3>
+            <ul class="resources-list list-unstyled">
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Cheatsheets</a></li>
+              <li><a href="#">Code Challenges</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Workspaces</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="contact-us col-md-3">
+            <h3 class="text-uppercase">Contact Us</h3>
+
+            <p>
+              Email:
+              <a
+                href="mailto:hoangduy2903@gmail.com"
+                class="text-white"
+                font-size="1rem"
+                >hoangduy2903@gmail.com</a
+              >
+            </p>
+            <p font-size="1rem">Phone: 079-975****</p>
+          </div>
+
+          <!-- About Us -->
+          <div class="about-us col-md-3">
+            <h3 class="text-uppercase">About Us</h3>
+            <p>Team Members:</p>
+            <ul class="list-unstyled">
+              <li>Lê Hoàng Duy</li>
+              <li>Huỳnh Bá Hiếu</li>
+              <li>Phạm Huỳnh Quốc Huy</li>
+              <li>Dương Minh Kiệt</li>
+              <li>Lê Anh Vũ</li>
+            </ul>
           </div>
         </div>
       </footer>
