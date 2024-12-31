@@ -281,16 +281,15 @@ body {
     flex-direction: column;
   }
   .container-left {
-    min-width: 20rem;
-  }
-  .container-left {
+    /* min-width: 20rem; */
     min-width: 100vw;
+    min-height: 100%;
   }
   .container-right {
     min-width: 100vw;
   }
   .part-parent-a {
-    width: 14rem;
+    width: 100%;
   }
 
   /* footer */
