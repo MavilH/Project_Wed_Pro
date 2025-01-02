@@ -45,7 +45,10 @@ pre {
   color: rgb(37, 113, 159);
 }
 @media screen and (max-width: 900px) {
-  .code {
-    width: 10%;
+  /* .code {
+    width: 50%;
+  } */
+  pre {
+    width: 50%;
   }
 }
