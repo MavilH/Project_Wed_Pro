@@ -46,6 +46,6 @@ pre {
 }
 @media screen and (max-width: 900px) {
   .code {
-    width: 50%;
+    width: 10%;
   }
 }
