@@ -92,13 +92,13 @@ links.forEach((link) => {
     event.target.parentNode.parentNode.parentNode.children[0].classList.add(
       "clicked"
     );
-
+    const contentElement = document.getElementById("content-block");
+    contentElement.innerHTML = `<p class="loading">Loading...</p>`;
     // Gửi yêu cầu AJAX để lấy nội dung file (ví dụ: sử dụng Fetch API)
     fetch(`./data/content/${file_Name}.html`) // Thay đổi phần mở rộng file nếu cần
       .then((response) => response.text())
       .then((data) => {
         // Cập nhật nội dung vào một phần tử có id là "content" (ví dụ)
-        const contentElement = document.getElementById("content-block");
         contentElement.innerHTML = data;
       })
       .catch((error) => {

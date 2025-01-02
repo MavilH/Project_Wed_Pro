@@ -8,49 +8,102 @@
   </head>
   <body>
     <div class="container">
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-
-      <var></var>
+      <h1 class="title"><b>Array Of Object</b></h1>
+      <h3 class="child-title"><b>1. Khái niệm về mảng</b></h3>
+      <p class="content">
+        - Mảng (Array) là một cấu trúc dữ liệu lưu trữ tập hợp các phần tử có
+        cùng kiểu dữ liệu (int, float, char, object, …).
+      </p>
+      <p class="content">
+        - Các phần tử được lưu trữ trong bộ nhớ liên tiếp và được truy cập thông
+        qua chỉ số (index), bắt đầu từ 0.
+      </p>
+      <h3 class="child-title"><b>2. Cách khai báo và khởi tạo mảng</b></h3>
+      <div class="content">
+        <h3><b>Khai báo mảng:</b></h3>
+        <!-- khung code -->
+        <div class="code">
+          <!-- chữ code -->
+          <span class="code-title"><b>Code</b></span>
+          <!-- code bên trong khung code -->
+          <pre><code class="language-java">
+      dataType[] arrayName;
+            </code></pre>
+        </div>
+        <h3><b>Khởi tạo mảng:</b></h3>
+        <p>Khởi tạo trực tiếp với kích thước:</p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="data-type">int[]</span> numbers = <span class="keyword">new</span> int[<span class="number">5</span>]; <span class="comment">// Mảng gồm 5 phần tử, mặc định giá trị là 0.</span>
+            </code></pre>
+        </div>
+        <p>Khởi tạo trực tiếp với giá trị:</p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="data-type">int[]</span> numbers = {<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>};
+            </code></pre>
+        </div>
+        <p>Khởi tạo mảng bằng cách gán giá trị sau:</p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="data-type">int[]</span> numbers = <span class="keyword">new</span> int[<span class="number">5</span>];
+     numbers[<span class="number">0</span>] = <span class="number">10</span>;
+     numbers[<span class="number">1</span>] = <span class="number">20</span>;
+            </code></pre>
+        </div>
+      </div>
+      <h3 class="child-title"><b>3. Các thao tác cơ bản trên mảng</b></h3>
+      <div class="content">
+        <h3><b>In mảng</b></h3>
+        <p>Tự in từng phần tử:</p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="keyword">for</span>(<span class="data-type">int</span> i = <span class="number">0</span>; i < arr.length; i++) {
+       System.out.print(arr[<span class="number">i</span>] + <span class="string">" "</span>);
+     }      
+            </code></pre>
+        </div>
+        <p>Sử dụng <b>Arrays.toString():</b></p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="keyword">import</span> java.util.Arrays;  
+     <span class="data-type">int</span>[] arr = <span class="keyword">new</span> <span class="data-type">int</span>[<span class="number">5</span>]
+     System.out.println(Arrays.toString(arr)); <span class="comment">// [0, 0, 0, 0, 0]</span>
+            </code></pre>
+        </div>
+        <!-- title của nội dung -->
+        <h3><b>Sắp xếp mảng</b></h3>
+        <!-- code bên trong -->
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="keyword">import</span> java.util.Arrays;  
+     <span class="data-type">int[]</span> numbers = {<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>};
+     Arrays.sort(numbers);
+     System.out.println(Arrays.toString(numbers)); <span class="comment">// [1, 2, 3, 4, 5]</span>
+    </code></pre>
+        </div>
+        <h3><b>Tìm kiếm phần tử trong mảng</b></h3>
+        <p>Tìm kiếm tuyến tính</p>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+     <span class="data-type">int</span> key = <span class="number">3</span>;
+     <span class="keyword">for</span> (<span class="data-type">int</span> i = <span class="number">0</span>; i < numbers.length; i++) {
+         if (numbers[ <span class="number">i</span>] == key) {
+             System.out.println(<span class="string">"Found at index: "</span> + i);
+             <span class="keyword">break;</span>
+         }
+     }
+    
+    </code></pre>
+        </div>
+      </div>
     </div>
   </body>
 </html>
