@@ -1,8 +1,11 @@
 .title {
-  /* font-weight: 700px; */
-  padding-top: 7px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
+  color: #1a73e8;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  font-size: 28px;
+  /* font-family: sans-serif; */
+
+  /* border-bottom: 1px solid black; */
 }
 .child-title {
   /* font-weight: 600px; */
@@ -33,7 +36,7 @@ pre {
 
 .comment,
 .string {
-  color: rgb(5, 68, 5);
+  color: rgb(10, 89, 10);
 }
 .data-type,
 .number {
