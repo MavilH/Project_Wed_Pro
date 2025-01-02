@@ -25,8 +25,6 @@ pre {
   padding-top: 10px;
   border-radius: 10px;
   width: 65%;
-  overflow-x: auto;
-  /* border: 1px solid #cdd9e5; */
 }
 .code-title {
   padding-left: 10px;
@@ -47,5 +45,6 @@ pre {
 @media screen and (max-width: 900px) {
   .code {
     width: 100%;
+    overflow-x: auto;
   }
 }
