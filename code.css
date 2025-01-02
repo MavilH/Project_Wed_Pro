@@ -43,3 +43,8 @@ pre {
 .keyword {
   color: rgb(37, 113, 159);
 }
+@media screen and (max-width: 900px) {
+  .code {
+    width: 80%;
+  }
+}
