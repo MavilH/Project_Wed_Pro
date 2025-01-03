@@ -7,28 +7,36 @@
     <link rel="stylesheet" href="./code.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="title"><b> Error & Exception Concepts</b></h1>
-      <h3 class="child-title"><b>1. Khái niệm về  Error & Exception Concepts</b></h3>
-      <p class="content">
+    <div class="container-content">
+      <h1 class="title">Error & Exception Concepts</h1>
+      <h3 class="child-title">
+        <b>1. Khái niệm về Error & Exception Concepts</b>
+      </h3>
+      <div class="content">
         <ul>
-          <li><b>Error</b>: Lỗi không thể phục hồi (e.g., OutOfMemoryError).</li>
           <li>
-            <b>Exception</b>: Lỗi có thể xử lý trong chương trình.
-            <li>
-              Loại exception:
-              <ul>
-                <li><b>Checked</b>: Cần xử lý tại compile-time (e.g., IOException).
-                </li>
-                <li><b>Unchecked</b>: Phát sinh tại runtime (e.g., NullPointerException).
-                </li>
-              </ul>
-            </li>
-          </ul>
-      </p>
+            <b>Error</b>: Lỗi không thể phục hồi (e.g., OutOfMemoryError).
+          </li>
+          <li><b>Exception</b>: Lỗi có thể xử lý trong chương trình.</li>
 
+          <li>
+            Loại exception:
+            <ul>
+              <li>
+                <b>Checked</b>: Cần xử lý tại compile-time (e.g., IOException).
+              </li>
+              <li>
+                <b>Unchecked</b>: Phát sinh tại runtime (e.g.,
+                NullPointerException).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-      <h3 class="child-title"><b> Ví dụ về Error (Lỗi không thể phục hồi)      </b></h3>
+      <h3 class="child-title">
+        <b> Ví dụ về Error (Lỗi không thể phục hồi) </b>
+      </h3>
       <div class="content">
         <div class="code">
           <span class="code-title"><b>Code</b></span>
@@ -43,10 +51,12 @@
                     }
                 }
             }
-            </code></pre>            
+            </code></pre>
         </div>
       </div>
-      <h3 class="child-title"><b> Ví dụ về Checked Exception (Lỗi cần xử lý tại compile-time)     </b></h3>
+      <h3 class="child-title">
+        <b> Ví dụ về Checked Exception (Lỗi cần xử lý tại compile-time) </b>
+      </h3>
       <div class="content">
         <div class="code">
           <span class="code-title"><b>Code</b></span>
@@ -67,10 +77,12 @@
                 }
             }
             <p>//Caught Checked Exception: java.io.FileNotFoundException: nonexistentfile.txt (No such file or directory)            </p>
-            </code></pre>            
+            </code></pre>
         </div>
       </div>
-      <h3 class="child-title"><b> Ví dụ về Unchecked Exception (Lỗi phát sinh tại runtime)      </b></h3>
+      <h3 class="child-title">
+        <b> Ví dụ về Unchecked Exception (Lỗi phát sinh tại runtime) </b>
+      </h3>
       <div class="content">
         <div class="code">
           <span class="code-title"><b>Code</b></span>
@@ -86,14 +98,24 @@
                     }
                 }
             }
-            </code></pre>            
+            </code></pre>
         </div>
       </div>
       <div class="content">
         <b>Tóm tắt :</b>
-        <ul><i><b>Error</b> là lỗi nghiêm trọng không thể phục hồi (ví dụ: OutOfMemoryError).</i>
-          <li><b>Checked Exception</b> là lỗi mà bạn phải xử lý tại compile-time (ví dụ: IOException).</li>
-          <li><b>Unchecked Exception</b> là lỗi mà chỉ phát sinh tại runtime (ví dụ: NullPointerException).</li>
+        <ul>
+          <i
+            ><b>Error</b> là lỗi nghiêm trọng không thể phục hồi (ví dụ:
+            OutOfMemoryError).</i
+          >
+          <li>
+            <b>Checked Exception</b> là lỗi mà bạn phải xử lý tại compile-time
+            (ví dụ: IOException).
+          </li>
+          <li>
+            <b>Unchecked Exception</b> là lỗi mà chỉ phát sinh tại runtime (ví
+            dụ: NullPointerException).
+          </li>
         </ul>
       </div>
     </div>
