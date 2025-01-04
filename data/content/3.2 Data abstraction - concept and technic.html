@@ -7,50 +7,79 @@
     <link rel="stylesheet" href="./code.css" />
   </head>
   <body>
-    <div class="container-content">
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
 
-      <var></var>
-    </div>
+    <div class="container">
+      <h1 class="title"><b>Data Abstraction</b></h1>
+      <p class="content">
+        <b>Data Abstraction</b> là một trong những nguyên tắc cốt lõi của OOP, tập trung vào việc hiển thị các tính năng quan trọng của một đối tượng và ẩn các chi tiết không cần thiết.
+        </p>
+
+        <ul>
+          <i><b>Concept</b>
+          <ul>
+            <li> Trừu tượng hóa là quá trình mô tả hành vi của đối tượng mà không quan tâm đến cách nó được triển khai.</li>
+            <li> Giúp giảm sự phức tạp và tăng tính bảo mật của chương trình.            </li>
+          </ul>
+          </i>
+          <i><b>Techniques for Data Abstraction</b>
+          <ol>
+            <li> <h3>Abstract Class:</h3>
+              <ul>
+              <li>Một lớp có thể chứa cả phương thức trừu tượng (không có thân hàm) và phương thức thông thường.              </li>
+              <li>
+                <div class="content">
+                  <div class="code">
+                    <span class="code-title"><b>Code</b></span>
+                    <pre><code class="language-java">
+                      <span class="keyword">abstract class</span> <span class="class-name">Shape</span> {
+                          <span class="keyword">abstract void</span> draw(); <span class="comment">// Phương thức trừu tượng</span>
+                      }
+                      
+                      <span class="keyword">class</span> <span class="class-name">Circle</span> <span class="keyword">extends</span> Shape {
+                          <span class="keyword">void</span> draw() {
+                              System.out.println(<span class="string">"Drawing a circle"</span>);
+                          }
+                      }
+                      </code></pre>                      
+                  </div>
+                </div>
+              </li>
+             </ul></li> <!--muc 1-->
+             <li> <h3>Interface:</h3>
+              <ul>
+                <li>Chỉ chứa các phương thức trừu tượng (Java 8 trở lên có thể có phương thức mặc định).                </li>
+                <li>
+                  <div class="content">
+                    <div class="code">
+                      <span class="code-title"><b>Code</b></span>
+                      <pre><code class="language-java">
+                        <span class="keyword">interface</span> <span class="class-name">Drawable</span> {
+                            <span class="keyword">void</span> draw(); <span class="comment">// Phương thức trừu tượng</span>
+                        }
+                        
+                        <span class="keyword">class</span> <span class="class-name">Rectangle</span> <span class="keyword">implements</span> Drawable {
+                            <span class="keyword">public void</span> draw() {
+                                System.out.println(<span class="string">"Drawing a rectangle"</span>);
+                            }
+                        }
+                        </code></pre>                                            
+                    </div>
+                  </div>
+                </li>
+               </ul></li>
+          </ol>
+          </i>
+          <i><b>Ưu điểm của Abstraction:          </b>
+          <ul>
+            <li>Tăng tính bảo mật: Ẩn các chi tiết nội bộ.
+            </li>
+            <li>Giảm độ phức tạp: Tập trung vào hành vi chính.
+            </li>
+            <li>Linh hoạt: Dễ dàng bảo trì và mở rộng chương trình.
+            </li>
+          </ul>
+          </i>
+        </ul>
+
   </body>
 </html>
