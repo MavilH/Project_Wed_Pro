@@ -50,6 +50,17 @@
         padding-left: 10px;
         font-style: italic;
       }
+      .comment,
+        .string {
+        color: rgb(10, 89, 10);
+        }
+        .data-type,
+        .number {
+        color: rgb(211, 46, 115);
+        }
+        .keyword {
+        color: rgb(37, 113, 159);
+        }
       .note {
         background-color: #e7f3fe;
         border-left: 6px solid #2196f3;
@@ -92,24 +103,24 @@
         <span class="code-title"><b>Code</b></span>
         <!-- code bên trong khung code -->
         <pre>
-           // Lớp cha "Hình"
-          class Shape {
-              void draw() {
-                  System.out.println("Vẽ hình...");
+          <span class="comment">// Lớp cha "Hình"</span>
+          class <span class="keyword">Shape</span> {
+            <span class="data-type">void</span> <span class="keyword">draw()</span> {
+                  System.out.println("<span class="comment">Vẽ hình...</span>");
               }
           }
 
-          // Lớp con "Hình Tròn"
-          class Circle extends Shape {
-              void draw() {
-                  System.out.println("Vẽ hình tròn...");
+          <span class="comment">// Lớp con "Hình Tròn"</span>
+          class <span class="keyword">Circle extends Shape</span> {
+            <span class="data-type">void</span> <span class="keyword">draw()</span> {
+                  System.out.println("<span class="comment">Vẽ hình tròn...</span>");
               }
           }
 
-          // Lớp con "Hình Vuông"
-          class Square extends Shape {
-              void draw() {
-                  System.out.println("Vẽ hình vuông...");
+          <span class="comment">// Lớp con "Hình Vuông"</span>
+          class <span class="keyword">Square extends Shape</span> {
+            <span class="data-type">void</span> <span class="keyword">draw()</span> {
+                  System.out.println("<span class="comment">Vẽ hình vuông...</span>");
               }
 
           </pre

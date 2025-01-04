@@ -56,6 +56,17 @@
             padding-left: 10px;
             font-style: italic;
           }
+          .comment,
+        .string {
+        color: rgb(10, 89, 10);
+        }
+        .data-type,
+        .number {
+        color: rgb(211, 46, 115);
+        }
+        .keyword {
+        color: rgb(37, 113, 159);
+        }
         .note {
             background-color: #e7f3fe;
             border-left: 6px solid #2196F3;
@@ -86,22 +97,22 @@
                 <!-- code bên trong khung code -->
         <pre>
 
-            class Student {
-                String name;
-                int age;
+            class <span class="keyword">Student</span> {
+                <span class="data-type">String</span> <span class="keyword">name</span>;
+                <span class="data-type">int</span> <span class="keyword">age</span>;
             
-                public void display() {
-                    System.out.println("Name: " + name);
-                    System.out.println("Age: " + age);
+                public void <span class="keyword">display()</span> {
+                    System.out.println("Name: " + <span class="keyword">name</span>);
+                    System.out.println("Age: " + <span class="keyword">age</span>);
                 }
             }
             
-            public class Entry {
+            public class <span class="keyword">Entry</span> {
                 public static void main(String[] args) {
-                    Student student1 = new Student();
-                    student1.name = "Linh";
-                    student1.age = 24;
-                    student1.display();
+                    <span class="data-type">Student</span> <span class="keyword">student1</span> = new <span class="keyword">Student()</span>;
+                    student1.<span class="keyword">name</span> = "Linh";
+                    student1.<span class="keyword">age</span> = <span class="number">24</span>;
+                    student1.<span class="keyword">display()</span>;
                 }
             }
         </pre>
@@ -112,13 +123,13 @@
                   <p><b>Ví dụ:</b> Học sinh, giáo viên, xe ô tô, ...</p>
               </div>
               <div class="note">
-                  <p><b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ, <code>student1</code> là một đối tượng đại diện cho thông tin của một học sinh.</p>
+                  <p><b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ, <span class="keyword">student1</span> là một đối tượng đại diện cho thông tin của một học sinh.</p>
               </div>
               <div class="note">
-                  <p><b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ, <code>name</code> và <code>age</code> là hai thuộc tính của đối tượng học sinh.</p>
+                  <p><b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ, <span class="keyword">name</span> và <span class="keyword">age</span> là hai thuộc tính của đối tượng học sinh.</p>
               </div>
               <div class="note">
-                  <p><b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ, <code>display()</code> là một phương thức dùng để giới thiệu bản thân của học sinh.</p>
+                  <p><b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ, <span class="keyword">display()</span> là một phương thức dùng để giới thiệu bản thân của học sinh.</p>
               </div>
         </div>
 
@@ -131,13 +142,13 @@
             <!-- code bên trong khung code -->
             <pre>
 
-              class <Tên_Lớp> {
-                  // Khai báo thuộc tính
-                  <Kiểu_Dữ_Liệu> <Tên_Thuộc_Tính>;
+              class <span class=keyword>(Tên_Lớp)</span> {
+                <span class="comment">// Khai báo thuộc tính</span>
+                <span class=keyword>(Kiểu_Dữ_Liệu) (Tên_Thuộc_Tính)</span>;
               
-                  // Khai báo phương thức
-                  public <Kiểu_Trả_Về> <Tên_Phương_Thức>(<Tham_Số>) {
-                      // Thân phương thức
+                <span class="comment">// Khai báo phương thức</span>
+                  public <span class=keyword>(Kiểu_Trả_Về) (Tên_Phương_Thức)</span>(<span class=keyword>(Tham_Số)</span>) {
+                    <span class="comment">// Thân phương thức</span>
                   }
               }
             </pre>
@@ -153,17 +164,17 @@
             <!-- code bên trong khung code -->
             <pre>
 
-              class Student {
-                  String name;
-                  int age;
+              class <span class=keyword>Student</span> {
+                <span class="data-type">String</span> <span class="keyword">name</span>;
+                <span class="data-type">int</span> <span class="keyword">age</span>;
               
-                  public void getInformation() {
-                      // Logic để nhập thông tin
+                  public void <span class=keyword>getInformation()</span> {
+                    <span class="comment">// Logic để nhập thông tin</span>
                   }
               
-                  public void display() {
-                      System.out.println("Name: " + name);
-                      System.out.println("Age: " + age);
+                  public void <span class="keyword">display()</span> {
+                      System.out.println("Name: " + <span class="keyword">name</span>);
+                      System.out.println("Age: " + <span class="keyword">age</span>);
                   }
               }
           </pre>
@@ -172,7 +183,7 @@
 
         <h3><b>4. Tạo đối tượng từ lớp</b></h3>
         <div class="content">
-            <p>Để tạo đối tượng từ lớp, bạn dùng từ khóa <code>new</code>. Ví dụ:</p>
+            <p>Để tạo đối tượng từ lớp, bạn dùng từ khóa <span class="keyword">new</span>. Ví dụ:</p>
         <!-- khung code -->
         <div class="code">
           <!-- chữ code -->
@@ -180,9 +191,9 @@
           <!-- code bên trong khung code -->
           <pre>
             
-            Student s1 = new Student();
-            s1.name = "Long";
-            s1.display();
+            <span class="data-type">Student</span> <span class="keyword">student1</span> = new <span class="keyword">Student()</span>;
+            s1.<span class="keyword">name</span> = "Long";
+            s1.<span class="keyword">display()</span>;
           </pre>
         </div>
         </div>
