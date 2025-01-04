@@ -3,14 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu về lớp (class) trong Java</title>
+    <link rel="stylesheet" href="./code.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 20px;
-            color: #333;
-        }
         /* .container {
             max-width: 900px;
             margin: auto;
@@ -19,19 +13,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         } */
-        h1 {
+        /* h1 {
             font-size: 24px;
-            /* text-align: center; */
+            text-align: center;
             color: black;
             margin-bottom: 20px;
-            font-weight: bold; /* In đậm tiêu đề */
-        }
-        h3 {
+            font-weight: bold; In đậm tiêu đề
+        } */
+        /* h3 {
             font-size: 18px;
             color: black;
             margin-top: 20px;
             font-weight: bold;
-        }
+        } */
         p {
             line-height: 1.6;
         }
@@ -80,16 +74,18 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Giới thiệu về lớp (class) trong Java</h1>
+    <div class="container-content">
+        <h1 class="title">Giới thiệu về lớp (class) trong Java</h1>
         
-        <h3>1. Ví dụ về lớp (class)</h3>
+        <h3><b>1. Ví dụ về lớp (class)</b></h3>
         <!-- khung code -->
-        <div class="code">
-          <!-- chữ code -->
-          <span class="code-title"><b>Code</b></span>
-          <!-- code bên trong khung code -->
-          <pre>
+        <div class="content">
+            <div class="code">
+                <!-- chữ code -->
+                <span class="code-title"><b>Code</b></span>
+                <!-- code bên trong khung code -->
+        <pre>
+
             class Student {
                 String name;
                 int age;
@@ -108,77 +104,87 @@
                     student1.display();
                 }
             }
-          </pre>
-        </div>
-        <p>Ví dụ này giúp bạn hiểu một số thành phần cơ bản của lớp (class):</p>
-        <div class="note">
-            <p><b>Lớp (class):</b> Là nơi định nghĩa thông tin về các đối tượng. Bạn có thể hiểu lớp là một kiểu dữ liệu mà biến của kiểu này được coi như một đối tượng.</p>
-            <p><b>Ví dụ:</b> Học sinh, giáo viên, xe ô tô, ...</p>
-        </div>
-        <div class="note">
-            <p><b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ, <code>student1</code> là một đối tượng đại diện cho thông tin của một học sinh.</p>
-        </div>
-        <div class="note">
-            <p><b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ, <code>name</code> và <code>age</code> là hai thuộc tính của đối tượng học sinh.</p>
-        </div>
-        <div class="note">
-            <p><b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ, <code>display()</code> là một phương thức dùng để giới thiệu bản thân của học sinh.</p>
+        </pre>
+              </div>
+              <p>Ví dụ này giúp bạn hiểu một số thành phần cơ bản của lớp (class):</p>
+              <div class="note">
+                  <p><b>Lớp (class):</b> Là nơi định nghĩa thông tin về các đối tượng. Bạn có thể hiểu lớp là một kiểu dữ liệu mà biến của kiểu này được coi như một đối tượng.</p>
+                  <p><b>Ví dụ:</b> Học sinh, giáo viên, xe ô tô, ...</p>
+              </div>
+              <div class="note">
+                  <p><b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ, <code>student1</code> là một đối tượng đại diện cho thông tin của một học sinh.</p>
+              </div>
+              <div class="note">
+                  <p><b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ, <code>name</code> và <code>age</code> là hai thuộc tính của đối tượng học sinh.</p>
+              </div>
+              <div class="note">
+                  <p><b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ, <code>display()</code> là một phương thức dùng để giới thiệu bản thân của học sinh.</p>
+              </div>
         </div>
 
-        <h3>2. Cú pháp khai báo lớp</h3>
-        <!-- khung code -->
+        <h3><b>2. Cú pháp khai báo lớp</b></h3>
+        <div class="content">
+            <!-- khung code -->
         <div class="code">
-          <!-- chữ code -->
-          <span class="code-title"><b>Code</b></span>
-          <!-- code bên trong khung code -->
-          <pre>
-            class <Tên_Lớp> {
-                // Khai báo thuộc tính
-                <Kiểu_Dữ_Liệu> <Tên_Thuộc_Tính>;
-            
-                // Khai báo phương thức
-                public <Kiểu_Trả_Về> <Tên_Phương_Thức>(<Tham_Số>) {
-                    // Thân phương thức
-                }
-            }
-          </pre>
+            <!-- chữ code -->
+            <span class="code-title"><b>Code</b></span>
+            <!-- code bên trong khung code -->
+            <pre>
+
+              class <Tên_Lớp> {
+                  // Khai báo thuộc tính
+                  <Kiểu_Dữ_Liệu> <Tên_Thuộc_Tính>;
+              
+                  // Khai báo phương thức
+                  public <Kiểu_Trả_Về> <Tên_Phương_Thức>(<Tham_Số>) {
+                      // Thân phương thức
+                  }
+              }
+            </pre>
+          </div>
         </div>
     
-        <h3>3. Ví dụ khai báo lớp Student</h3>
-        <!-- khung code -->
+        <h3><b>3. Ví dụ khai báo lớp Student</b></h3>
+        <div class="content">
+             <!-- khung code -->
         <div class="code">
-          <!-- chữ code -->
-          <span class="code-title"><b>Code</b></span>
-          <!-- code bên trong khung code -->
-          <pre>
-            class Student {
-                String name;
-                int age;
-            
-                public void getInformation() {
-                    // Logic để nhập thông tin
-                }
-            
-                public void display() {
-                    System.out.println("Name: " + name);
-                    System.out.println("Age: " + age);
-                }
-            }
-        </pre>
+            <!-- chữ code -->
+            <span class="code-title"><b>Code</b></span>
+            <!-- code bên trong khung code -->
+            <pre>
+
+              class Student {
+                  String name;
+                  int age;
+              
+                  public void getInformation() {
+                      // Logic để nhập thông tin
+                  }
+              
+                  public void display() {
+                      System.out.println("Name: " + name);
+                      System.out.println("Age: " + age);
+                  }
+              }
+          </pre>
+          </div>
         </div>
 
-        <h3>4. Tạo đối tượng từ lớp</h3>
-        <p>Để tạo đối tượng từ lớp, bạn dùng từ khóa <code>new</code>. Ví dụ:</p>
+        <h3><b>4. Tạo đối tượng từ lớp</b></h3>
+        <div class="content">
+            <p>Để tạo đối tượng từ lớp, bạn dùng từ khóa <code>new</code>. Ví dụ:</p>
         <!-- khung code -->
         <div class="code">
           <!-- chữ code -->
           <span class="code-title"><b>Code</b></span>
           <!-- code bên trong khung code -->
           <pre>
+            
             Student s1 = new Student();
             s1.name = "Long";
             s1.display();
           </pre>
+        </div>
         </div>
 
     </div>
