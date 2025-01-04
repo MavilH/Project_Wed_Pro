@@ -257,6 +257,12 @@ body {
 .footer {
   border-bottom: 5px solid rgba(22, 20, 20, 0.267);
 }
+.welcome-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 /*footer*/
 
 /* media screen */
