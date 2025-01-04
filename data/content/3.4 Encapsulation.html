@@ -50,6 +50,17 @@
         padding-left: 10px;
         font-style: italic;
       }
+      .comment,
+        .string {
+        color: rgb(10, 89, 10);
+        }
+        .data-type,
+        .number {
+        color: rgb(211, 46, 115);
+        }
+        .keyword {
+        color: rgb(37, 113, 159);
+        }
       .note {
         background-color: #e7f3fe;
         border-left: 6px solid #2196f3;
@@ -84,16 +95,16 @@
         <span class="code-title"><b>Code</b></span>
         <!-- code bên trong khung code -->
         <pre>
-            class Student {
-                public String name;
-                public int age;
-                public double gpa;
+            class <span class="keyword">Student</span> {
+                public <span class="data-type">String</span> <span class="keyword">name</span>;
+                public <span class="data-type">int</span> <span class="keyword">age</span>;
+                public <span class="data-type">double</span> <span class="keyword">gpa</span>;
             }
           </pre
         >
       </div>
       <p>
-        Trong ví dụ trên, các thuộc tính của lớp <code>Student</code> đều là
+        Trong ví dụ trên, các thuộc tính của lớp <span class="keyword">Student</span> đều là
         <b>public</b>, dẫn tới các thuộc tính này có thể được truy xuất trực
         tiếp từ nơi khác. <br />Trên thực tế, bạn nên hạn chế tối đa các biến có
         phạm vi truy cập <b>public</b>, vì nó vi phạm tính đóng gói trong lập
@@ -101,7 +112,7 @@
       </p>
 
       <p>
-        Để đảm bảo tính đóng gói cho lớp <code>Student</code>, bạn nên để phạm
+        Để đảm bảo tính đóng gói cho lớp <span class="keyword">Student</span>, bạn nên để phạm
         vi truy cập của các thuộc tính là <b>private</b> <br />
         và truy xuất tới các thuộc tính này thông qua các phương thức
         <b>public</b> (gọi là các <i>setter</i>, <i>getter</i>) giống như sau:
@@ -113,33 +124,33 @@
         <span class="code-title"><b>Code</b></span>
         <!-- code bên trong khung code -->
         <pre>
-            class Student {
-                private String name;
-                private int age;
-                private double gpa;
+            class <span class="keyword">Student</span> {
+              private <span class="data-type">String</span> <span class="keyword">name</span>;
+              private <span class="data-type">int</span> <span class="keyword">age</span>;
+              private <span class="data-type">double</span> <span class="keyword">gpa</span>
             
-                public String getName() {
-                    return name;
+                public <span class="data-type">String</span> <span class="keyword">getName()</span> {
+                    return <span class="keyword">name</span>;
                 }
             
-                public void setName(String name) {
-                    this.name = name;
+                public <span class="data-type">void</span> <span class="keyword">setName</span>(<span class="data-type">String</span> <span class="keyword">name</span>) {
+                    this.<span class="keyword">name</span> = <span class="keyword">name</span>;
                 }
             
-                public int getAge() {
-                    return age;
+                public <span class="data-type">int</span> <span class="keyword">getAge()</span> {
+                    return <span class="keyword">age</span>;
                 }
             
-                public void setAge(int age) {
-                    this.age = age;
+                public <span class="data-type">void</span> <span class="keyword">setAge</span>(<span class="data-type">int</span> <span class="keyword">age</span>) {
+                    this.<span class="keyword">age</span> = <span class="keyword">age</span>;
                 }
             
-                public double getGpa() {
-                    return gpa;
+                public <span class="data-type">double</span> <span class="keyword">getGpa()</span> {
+                    return <span class="keyword">gpa</span>;
                 }
             
-                public void setGpa(double gpa) {
-                    this.gpa = gpa;
+                public <span class="data-type">void</span> <span class="keyword">setGpa</span>(<span class="data-type">double</span> <span class="keyword">gpa</span>) {
+                    this.<span class="keyword">gpa</span> = <span class="keyword">gpa</span>;
                 }
             }
           </pre

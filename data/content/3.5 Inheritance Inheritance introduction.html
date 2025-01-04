@@ -50,6 +50,17 @@
         padding-left: 10px;
         font-style: italic;
       }
+      .comment,
+        .string {
+        color: rgb(10, 89, 10);
+        }
+        .data-type,
+        .number {
+        color: rgb(211, 46, 115);
+        }
+        .keyword {
+        color: rgb(37, 113, 159);
+        }
       .note {
         background-color: #e7f3fe;
         border-left: 6px solid #2196f3;
@@ -79,7 +90,7 @@
 
       <p>
         Trong ngôn ngữ lập trình Java, để kế thừa một lớp bạn dùng từ khóa
-        <code>extends</code>. Hãy xem xét ví dụ sau:
+        <span class="keyword">extends</span>. Hãy xem xét ví dụ sau:
       </p>
       <h3>Ví dụ: Kế thừa giữa lớp "Động Vật" và lớp con "Chó"</h3>
       <!-- khung code -->
@@ -88,17 +99,17 @@
         <span class="code-title"><b>Code</b></span>
         <!-- code bên trong khung code -->
         <pre>
-            // Lớp cha "Động Vật"
-            class Animal {
-                void eat() {
-                    System.out.println("Động vật đang ăn...");
+          <span class="comment">// Lớp cha "Động Vật"</span>
+            class <span class="keyword">Animal</span> {
+              <span class="data-type">void</span> <span class="keyword">eat()</span> {
+                    System.out.println("<span class="string">Động vật đang ăn...</span>");
                 }
             }
             
-            // Lớp con "Chó" kế thừa từ lớp "Động Vật"
-            class Dog extends Animal {
-                void bark() {
-                    System.out.println("Chó sủa...");
+            <span class="comment">// Lớp con "Chó" kế thừa từ lớp "Động Vật"</span>
+            class <span class="keyword">Dog extends Animal</span> {
+              <span class="data-type">void</span> <span class="keyword">bark()</span> {
+                    System.out.println("<span class="string">Chó sủa...</span>");
                 }
             }
           </pre
