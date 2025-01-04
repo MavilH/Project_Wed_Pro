@@ -5,52 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./code.css" />
+    <style>
+      .custom-list {
+          list-style: none; /* Xóa dấu chấm mặc định của <ul> */
+          padding: 0;
+      }
+      .custom-list li::before {
+          content: counter(item) ". "; /* Thêm số thứ tự */
+          counter-increment: item; /* Tăng giá trị đếm */
+          font-weight: bold; /* In đậm số thứ tự */
+      }
+      .custom-list {
+          counter-reset: item; /* Khởi tạo bộ đếm */
+      }
+  </style>
   </head>
   <body>
     <div class="container">
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-
-      <var></var>
+      <h1 class="title"><b>OOP Concepts</b></h1>
+      <p class="content">
+         <b>Object-Oriented Programming (OOP)</b> là một mô hình lập trình dựa trên các đối tượng (objects), cho phép lập trình viên mô phỏng các thực thể trong thế giới thực.
+        Các concepts chính của OOP bao gồm:
+      </p>
+      <ol class="custom-list">
+      <li><b> Encapsulation (Đóng gói):</b>
+        <ul>
+          <i>Bảo vệ dữ liệu bên trong một đối tượng bằng cách ẩn thông tin và chỉ cung cấp các phương thức (methods) để truy cập.          </i>
+          <i>      <div class="content">
+            <div class="code">
+              <span class="code-title"><b>Code</b></span>
+              <pre><code class="language-java">
+                <span class="keyword">class</span> <span class="class-name">Car</span> {
+                    <span class="keyword">private String</span> model; <span class="comment">// Thuộc tính được đóng gói</span>
+                
+                    <span class="keyword">public void</span> setModel(<span class="keyword">String</span> model) {
+                        <span class="keyword">this</span>.model = model;
+                    }
+                
+                    <span class="keyword">public String</span> getModel() {
+                        <span class="keyword">return</span> model;
+                    }
+                }
+                </code></pre>                
+            </div></i>
+        </ul>
+      </li>
+      <li> <!--Bài 2--><b> Inheritance (Kế thừa):</b>
+        <ul>
+          <i>Cho phép một lớp (class) kế thừa thuộc tính và phương thức từ lớp khác.
+          </i>
+          <i>      <div class="content">
+            <div class="code">
+              <span class="code-title"><b>Code</b></span>
+              <pre><code class="language-java">
+                <span class="keyword">class</span> <span class="class-name">Animal</span> {
+                    <span class="keyword">void</span> eat() {
+                        System.out.println(<span class="string">"This animal eats food."</span>);
+                    }
+                }
+                
+                <span class="keyword">class</span> <span class="class-name">Dog</span> <span class="keyword">extends</span> Animal {
+                    <span class="keyword">void</span> bark() {
+                        System.out.println(<span class="string">"This dog barks."</span>);
+                    }
+                }
+                </code></pre>                               
+            </div>
+          </i>
+          <i>Cách dùng</i>
+          <i> <div class="content">
+            <div class="code">
+              <span class="code-title"><b>Code</b></span>
+              <pre><code class="language-java">
+                <span class="keyword">public class</span> <span class="class-name">Main</span> {
+                    <span class="keyword">public static void</span> <span class="method-name">main</span>(<span class="keyword">String[]</span> args) {
+                        Dog myDog = <span class="keyword">new</span> Dog();
+                        myDog.eat(); <span class="comment">// Output: This animal eats food.</span>
+                        myDog.bark(); <span class="comment">// Output: This dog barks.</span>
+                    }
+                }
+                </code></pre>                
+            </div></i>
+        </ul>
+      </li>
+      <li><b> Polymorphism (Đa hình): </b>
+        <ul>
+          <i>Một phương thức hoặc đối tượng có thể biểu diễn nhiều hành vi khác nhau.          </i>
+          <i><pre><code class="language-java">
+            <span class="keyword">class</span> <span class="class-name">Animal</span> {
+                <span class="keyword">void</span> sound() {
+                    System.out.println(<span class="string">"Animal makes sound"</span>);
+                }
+            }
+            
+            <span class="keyword">class</span> <span class="class-name">Cat</span> <span class="keyword">extends</span> Animal {
+                <span class="keyword">void</span> sound() {
+                    System.out.println(<span class="string">"Cat meows"</span>);
+                }
+            }
+            </code></pre>
+            </i>
+        </ul></li>
+        <li><b> Abstraction (Trừu tượng):        </b>
+          <ul>
+            <i>Ẩn đi các chi tiết thực thi, chỉ hiển thị hành vi bên ngoài của đối tượng.
+            </i>
+            <i>Chi tiết hơn được trình bày ở phần 3.2.
+            </i>
+          </ul></li>    </ol>
     </div>
   </body>
 </html>

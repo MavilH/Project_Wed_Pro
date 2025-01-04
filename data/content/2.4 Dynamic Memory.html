@@ -8,49 +8,24 @@
   </head>
   <body>
     <div class="container">
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
-      <p>ehehehhhhehe</p>
+      <h1 class="title"><b>Dynamic Memory trong java</b></h1>
+      <h3 class="child-title"><b>1. Khái niệm về Dynamic Memory</b></h3>
+      <p class="content">
+      Dynamic Memory trong Java liên quan đến việc cấp phát bộ nhớ trong runtime, chủ yếu trên Heap để lưu trữ các đối tượng được tạo bằng từ khóa <b>new.</b> 
+        <ul><li><b>Stack</b> Lưu trữ biến cục bộ và tham chiếu đối tượng.</li><li><b>Heap</b>
+          Lưu trữ các đối tượng, quản lý bởi Garbage Collector (GC).</li></ul>    </p>
 
-      <var></var>
+      <h3 class="child-title"><b>2. Ví dụ </b></h3>
+      <div class="content">
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+            Animal cat = <span class="keyword">new</span> Animal(); <span class="comment">// Cấp phát bộ nhớ trên heap</span>
+            cat = <span class="keyword">null</span>; <span class="comment">// GC sẽ thu hồi khi cần</span>
+            </code></pre>            
+        </div>
+      </div>
+      <div class="content"></div>
     </div>
   </body>
 </html>
