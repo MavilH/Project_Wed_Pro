@@ -311,4 +311,10 @@ body {
   .about-us {
     display: none;
   }
+  .img-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
