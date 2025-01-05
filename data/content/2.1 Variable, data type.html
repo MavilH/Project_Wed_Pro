@@ -8,190 +8,196 @@
   </head>
   <body>
     <div class="container-content">
-      <p class="theme">Variable,data types</p>
-      <p class ="noidung">1. Từ khóa và Định danh (Keywords and Identifiers):
-      </p>
-      <p class ="noidung2">Từ khóa (Keywords):
-      </p>
-      <p>Java sử dụng các từ khóa tương tự như ngôn ngữ C, ví dụ: <a class="text">int, float, if, else, class, v.v.</a><br>
-        Không thể dùng các từ khóa này làm tên biến hoặc hàm.
+      <h1 class="title">Variable,data types</h1>
+      <h3><b>1. Từ khóa và Định danh (Keywords and Identifiers)</b></h3>
+      <div class="content">
+        <ul>
+          <li><b>Từ khóa (Keywords)</b>
+            <p>Java sử dụng các từ khóa tương tự như ngôn ngữ C, ví dụ: <a class="text">int, float, if, else, class, v.v.</a><br>
+              Không thể dùng các từ khóa này làm tên biến hoặc hàm.
+              </p>
+          </li>
+          <li><b>Định danh (Identifiers)</b>
+            <p>Tên định danh có thể bao gồm các ký tự: chữ cái (a-z, A-Z), chữ số (0-9), dấu gạch dưới _, và ký hiệu <a class="text">$</a>. <br>
+              Không thể bắt đầu bằng chữ số. <br> 
+              Java phân biệt chữ hoa và chữ thường, ví dụ: <a class="text">MyVariable </a>và <a class="text">myvariable</a>  là hai định danh khác nhau. <br> 
+              </p>
+          </li>
+        </ul>
+      </div>
+      <h3><b>2. Kiểu dữ liệu nguyên thủy (Primitive Data Types)</b></h3>
+      <div class="content">
+        <p>Java cung cấp các kiểu dữ liệu nguyên thủy, gồm:
         </p>
-      <p class="noidung2">Định danh (Identifiers):
-      </p>
-      <p>Tên định danh có thể bao gồm các ký tự: chữ cái (a-z, A-Z), chữ số (0-9), dấu gạch dưới _, và ký hiệu <a class="text">$</a>. <br>
-        Không thể bắt đầu bằng chữ số. <br> 
-        Java phân biệt chữ hoa và chữ thường, ví dụ: <a class="text">MyVariable </a>và <a class="text">myvariable</a>  là hai định danh khác nhau. <br> 
-        </p>
-      <p class ="noidung">2. Kiểu dữ liệu nguyên thủy (Primitive Data Types):
-      </p>
-      <p>Java cung cấp các kiểu dữ liệu nguyên thủy, gồm:
-      </p>
-      <ul class="kieudulieu">
-        <li>Số nguyên: <a class="text">byte, short, int, long</a>
-        <li>Số thực: <a class="text">float, double</a>
-        </li>
-        <li> Ký tự:  <a class="text">char </a>(dùng để lưu trữ một ký tự Unicode)
-        </li>
-        <li>Boolean: <a class="text">boolean</a> (chỉ có giá trị true hoặc false)
-        </li>
-      </ul>
-      <p>cú pháp khai báo : <br> 
-        <div class="code">
-          <span class="code-title"><b>Code</b></span>
-          <pre><code class="language-java">
-              <span class="keyword">int</span> myNumber = <span class="number">10</span>;
-              <span class="keyword">float</span> myFloat = <span class="number">3.14f</span>;
-              <span class="keyword">char</span> myChar = <span class="string">'A'</span>;
-              <span class="keyword">boolean</span> isJavaFun = <span class="boolean">true</span>;
-          </code></pre>
+        <ul class="kieudulieu">
+          <li>Số nguyên: <a class="text">byte, short, int, long</a>
+          <li>Số thực: <a class="text">float, double</a>
+          </li>
+          <li> Ký tự:  <a class="text">char </a>(dùng để lưu trữ một ký tự Unicode)
+          </li>
+          <li>Boolean: <a class="text">boolean</a> (chỉ có giá trị true hoặc false)
+          </li>
+        </ul>
+        <p>cú pháp khai báo : <br> 
+          <div class="code">
+            <span class="code-title"><b>Code</b></span>
+            <pre><code class="language-java">
+                <span class="keyword">int</span> myNumber = <span class="number">10</span>;
+                <span class="keyword">float</span> myFloat = <span class="number">3.14f</span>;
+                <span class="keyword">char</span> myChar = <span class="string">'A'</span>;
+                <span class="keyword">boolean</span> isJavaFun = <span class="boolean">true</span>;
+            </code></pre>
+        </div>
       </div>
       
       </p>
-      <p class="noidung">3. Toán tử và Biểu thức (Operators and Expressions): <br> 
+      <h3><b>3. Toán tử và Biểu thức (Operators and Expressions)</b></h3>
         
-      </p>
-      <p> Các toán tử và biểu thức: <br> 
-        <ul class="kieudulieu">
-        <li>Số nguyên: <a class="text"> +, -, *, /, %
-        </a>
-        <li>Số thực: <a class="text"> ==, !=, <, >, <=, >=</a>
-        </li>
-        <li> Ký tự:  <a class="text">&&, ||, !</a>
-        </li>
-        <li>Boolean: <a class="text">boolean =, +=, -=, v.v.</a> 
-        </li>
-      </ul> 
-      Ví dụ: <br>
-      <div class="code">
-        <span class="code-title"><b>Code</b></span>
-        <pre><code class="language-java">
-            <span class="keyword">int</span> x = <span class="number">10</span>;
-            <span class="keyword">int</span> y = <span class="number">20</span>;
-            <span class="keyword">int</span> sum = x + y; <span class="comment">// Kết quả: 30</span>
-        </code></pre>
-    </div>
-    
-
-    
-    </p>
+      <div class="content">
+        <p> <b>Các toán tử và biểu thức:</b> <br> 
+          <ul class="kieudulieu">
+          <li>Số nguyên: <a class="text"> +, -, *, /, %
+          </a>
+          <li>Số thực: <a class="text"> ==, !=, <, >, <=, >=</a>
+          </li>
+          <li> Ký tự:  <a class="text">&&, ||, !</a>
+          </li>
+          <li>Boolean: <a class="text">boolean =, +=, -=, v.v.</a> 
+          </li>
+        </ul> 
+        Ví dụ: <br>
+        <div class="code">
+          <span class="code-title"><b>Code</b></span>
+          <pre><code class="language-java">
+              <span class="keyword">int</span> x = <span class="number">10</span>;
+              <span class="keyword">int</span> y = <span class="number">20</span>;
+              <span class="keyword">int</span> sum = x + y; <span class="comment">// Kết quả: 30</span>
+          </code></pre>
+      </div>
       <p class="noidung2">Thứ tự ưu tiên toán tử:
       </p>
       <p>Toán tử trong ngoặc () được ưu tiên trước. <br> 
         Tiếp theo là toán tử số học, so sánh, logic, và cuối cùng là gán.
         </p>
-      <p class ="noidung">4. Mảng (Arrays):
-      </p>
-      <p>Mảng là một đối tượng chứa nhiều giá trị cùng kiểu.
-      </p>
-      <p class="noidung2 ">Khai báo và khởi tạo: <br>
-        <div class="code">
-          <span class="code-title"><b>Code</b></span>
-          <pre><code class="language-java">
-              <span class="keyword">int</span>[] numbers = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>]; <span class="comment">// Mảng chứa 5 số nguyên</span>
-              numbers[<span class="number">0</span>] = <span class="number">10</span>; <span class="comment">// Gán giá trị cho phần tử đầu tiên</span>
-          </code></pre>
       </div>
-      
-        Mảng nhiều chiều: <br> 
-        <div class="code">
-          <span class="code-title"><b>Code</b></span>
-          <pre><code class="language-java">
-              <span class="keyword">int</span>[][] matrix = { 
-                  {<span class="number">1</span>, <span class="number">2</span>}, 
-                  {<span class="number">3</span>, <span class="number">4</span>}, 
-                  {<span class="number">5</span>, <span class="number">6</span>} 
-              };
-              System.out.println(matrix[<span class="number">1</span>][<span class="number">1</span>]); <span class="comment">// Kết quả: 4</span>
-          </code></pre>
-      </div>
-      <br> 
+      <h3><b>4. Mảng (Arrays)</b></h3>
+      <div class="content">
+        <p>Mảng là một đối tượng chứa nhiều giá trị cùng kiểu.
+        </p>
+        <p class="noidung2 ">Khai báo và khởi tạo: <br>
+          <div class="code">
+            <span class="code-title"><b>Code</b></span>
+            <pre><code class="language-java">
+                <span class="keyword">int</span>[] numbers = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>]; <span class="comment">// Mảng chứa 5 số nguyên</span>
+                numbers[<span class="number">0</span>] = <span class="number">10</span>; <span class="comment">// Gán giá trị cho phần tử đầu tiên</span>
+            </code></pre>
+        </div>
         
-      </p>
-      <p class="noidung">5.Nhập/Xuất dữ liệu (Input/Output):
-      </p>
-      <p>Sử dụng lớp <a class="text">Scanner</a> để nhập dữ liệu: <br>
-        <div class="code">
+          <b>Mảng nhiều chiều:</b> <br> 
+          <div class="code">
+            <span class="code-title"><b>Code</b></span>
+            <pre><code class="language-java">
+                <span class="keyword">int</span>[][] matrix = { 
+                    {<span class="number">1</span>, <span class="number">2</span>}, 
+                    {<span class="number">3</span>, <span class="number">4</span>}, 
+                    {<span class="number">5</span>, <span class="number">6</span>} 
+                };
+                System.out.println(matrix[<span class="number">1</span>][<span class="number">1</span>]); <span class="comment">// Kết quả: 4</span>
+            </code></pre>
+        </div>
+        <br> 
+          
+        </p>
+      </div>
+      <h3><b>5.Nhập/Xuất dữ liệu (Input/Output)</b></h3>
+      <div class="content">
+        <p>Sử dụng lớp <a class="text">Scanner</a> để nhập dữ liệu: <br>
+          <div class="code">
+            <span class="code-title"><b>Code</b></span>
+            <pre><code class="language-java">
+                <span class="keyword">import</span> java.util.Scanner;
+        
+                <span class="keyword">public class</span> Main {
+                    <span class="keyword">public static void</span> main(String[] args) {
+                        Scanner sc = <span class="keyword">new</span> Scanner(System.in);
+                        System.out.print(<span class="string">"Nhập số: "</span>);
+                        <span class="keyword">int</span> num = sc.nextInt();
+                        System.out.println(<span class="string">"Số bạn nhập là: "</span> + num);
+                    }
+                }
+            </code></pre>
+        </div>
+         <br> 
+          Sử dụng <a class="text">System.out</a> để xuất dữ liệu:<br>
+          <div class="code">
+            <span class="code-title"><b>Code</b></span>
+            <pre><code class="language-java">
+                System.out.println(<span class="string">"Chào mừng đến với Java!"</span>); <span class="comment">// Xuất có xuống dòng</span>
+                System.out.print(<span class="string">"Hello "</span>); <span class="comment">// Xuất không xuống dòng</span>
+                System.out.printf(<span class="string">"Số %.2f"</span>, 3.14159); <span class="comment">// Định dạng như C</span>
+            </code></pre>
+        </div>
+         <br>
+  
+        </p>
+      </div>
+      <h3><b>6. Phong cách lập trình Java (Java Style)</b></h3>
+      <div class="content">
+        <p class ="noidung2">Đặt tên biến, lớp, và hằng số:
+        </p>
+        <p> <ul>
+          <li>Biến: Sử dụng <a class="text">lowerCamelCase</a>, ví dụ: <a class="text">studentName</a> </li>
+          <li>Lớp: Sử dụng <a class="text">UpperCamelCase</a>, ví dụ:<a class="text">MyClass</a> </li> 
+         <li> Hằng số: Viết hoa và cách nhau bởi dấu gạch dưới <a class="text">_</a>, ví dụ: <a class="text">PI</a>,  <a class="text">MAX_VALUE</a>.</li>
+        </ul>
+        </p>
+        <p class ="noidung2">Quy tắc thụt lề và ngoặc:
+        </p>
+        <p>Các dòng mã trong một khối phải thụt vào so với dòng chứa ngoặc  <a class="text">{ </a>hoặc lệnh mở đầu.</p>
+      </div>
+      <h3><b>7.Gói (Package)</b></h3>
+      <div class="content">
+        <p class="noidung2">Khái niệm:
+        </p>
+        <p>Gói là một namespace để nhóm các lớp và interface liên quan.<br>
+          Ví dụ: java.util là một gói chứa các lớp tiện ích như: <a class="text">ArrayList</a> , <a class="text">HashMap</a>. 
+          </p>
+        <p class="noidung2">Tạo gói: </p>
+        <p><div class="code">
           <span class="code-title"><b>Code</b></span>
           <pre><code class="language-java">
-              <span class="keyword">import</span> java.util.Scanner;
+              <span class="keyword">package</span> myPackage;
       
-              <span class="keyword">public class</span> Main {
+              <span class="keyword">public class</span> MyClass {
                   <span class="keyword">public static void</span> main(String[] args) {
-                      Scanner sc = <span class="keyword">new</span> Scanner(System.in);
-                      System.out.print(<span class="string">"Nhập số: "</span>);
-                      <span class="keyword">int</span> num = sc.nextInt();
-                      System.out.println(<span class="string">"Số bạn nhập là: "</span> + num);
+                      System.out.println(<span class="string">"Đây là lớp trong gói myPackage"</span>);
                   }
               }
           </code></pre>
       </div>
-       <br> 
-        Sử dụng <a class="text">System.out</a> để xuất dữ liệu:<br>
-        <div class="code">
-          <span class="code-title"><b>Code</b></span>
-          <pre><code class="language-java">
-              System.out.println(<span class="string">"Chào mừng đến với Java!"</span>); <span class="comment">// Xuất có xuống dòng</span>
-              System.out.print(<span class="string">"Hello "</span>); <span class="comment">// Xuất không xuống dòng</span>
-              System.out.printf(<span class="string">"Số %.2f"</span>, 3.14159); <span class="comment">// Định dạng như C</span>
-          </code></pre>
-      </div>
-       <br>
-
-      </p>
-      <p class="noidung">6. Phong cách lập trình Java (Java Style):
-
-      </p>
-      <p class ="noidung2">Đặt tên biến, lớp, và hằng số:
-      </p>
-      <p> <ul>
-        <li>Biến: Sử dụng <a class="text">lowerCamelCase</a>, ví dụ: <a class="text">studentName</a> </li>
-        <li>Lớp: Sử dụng <a class="text">UpperCamelCase</a>, ví dụ:<a class="text">MyClass</a> </li> 
-       <li> Hằng số: Viết hoa và cách nhau bởi dấu gạch dưới <a class="text">_</a>, ví dụ: <a class="text">PI</a>,  <a class="text">MAX_VALUE</a>.</li>
-      </ul>
-      </p>
-      <p class ="noidung2">Quy tắc thụt lề và ngoặc:
-      </p>
-      <p>Các dòng mã trong một khối phải thụt vào so với dòng chứa ngoặc  <a class="text">{ </a>hoặc lệnh mở đầu.</p>
-      <p class="noidung">7.Gói (Package):
-      </p>
-      <p class="noidung2">Khái niệm:
-      </p>
-      <p>Gói là một namespace để nhóm các lớp và interface liên quan.<br>
-        Ví dụ: java.util là một gói chứa các lớp tiện ích như: <a class="text">ArrayList</a> , <a class="text">HashMap</a>. 
-        </p>
-      <p class="noidung2">Tạo gói: </p>
-      <p><div class="code">
-        <span class="code-title"><b>Code</b></span>
-        <pre><code class="language-java">
-            <span class="keyword">package</span> myPackage;
-    
-            <span class="keyword">public class</span> MyClass {
-                <span class="keyword">public static void</span> main(String[] args) {
-                    System.out.println(<span class="string">"Đây là lớp trong gói myPackage"</span>);
-                }
-            }
-        </code></pre>
-    </div>
-    
-
-    </p>
-      <p class="noidung">8. Truyền tham số cho main:
-      </p>
-      <p>Tham số có thể truyền vào phương thức <a class="text">main</a> thông qua mảng <a class="text">String args[]</a> . Ví dụ: <br>
-         <br>
-        Chạy chương trình với lệnh: <a class="text">java CommandLineExample Hello World</a> <br> 
-        <div class="output">
-          <span class="output-title"><b>Output</b></span>
-          <pre>
-      Tham số: Hello
-      Tham số: World
-          </pre>
-      </div>
       
+  
       </p>
-      
+        </div>
+      <h3><b>8. Truyền tham số cho main:</b></h3>
+      <div class="content">
+        <p>Tham số có thể truyền vào phương thức <a class="text">main</a> thông qua mảng <a class="text">String args[]</a> . Ví dụ: <br>
+          <br>
+         Chạy chương trình với lệnh: <a class="text">java CommandLineExample Hello World</a> <br> 
+         <div class="output">
+           <div class="code">
+            <span class="code-title"><b>Output</b></span>
+            <pre >
 
-      <var></var>
+              Tham số: Hello
+              Tham số: World
+                  </pre>
+           </div>
+       </div>
+       
+       </p>
+      </div>
+    
     </div>
   </body>
 </html>

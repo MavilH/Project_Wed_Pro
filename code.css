@@ -1,5 +1,5 @@
 .container-content {
-  width: 100%;
+  width: 95%;
 }
 .title {
   color: #1a73e8;
@@ -30,7 +30,7 @@ pre {
   background-color: #cdd9e5;
   padding-top: 10px;
   border-radius: 10px;
-  width: 65%;
+  width: 75%;
 }
 .code-title {
   padding-left: 10px;
@@ -50,7 +50,7 @@ pre {
 }
 @media screen and (max-width: 900px) {
   .code {
-    width: 100%;
+    width: 90%;
     overflow-x: auto;
     padding: 0;
     margin: 0;
@@ -64,50 +64,48 @@ pre {
 .content-1 {
   text-align: center;
   font-weight: bold;
-  font-size:larger;
+  font-size: larger;
 }
-.content-2{
+.content-2 {
   font-weight: bold;
-  color :#1a73e8;
+  color: #1a73e8;
 }
-.content-3{
-   font-weight: bold;
+.content-3 {
+  font-weight: bold;
 }
 .oop {
-  font-size:larger;
-  
+  font-size: larger;
 }
 .oop li {
-  margin-top: 10px ;
+  margin-top: 10px;
 }
-.noidung  {
-  font-weight:bold;
-  color :#1a73e8;
+.noidung {
+  font-weight: bold;
+  color: #1a73e8;
 }
 .truutuong img {
-  width :450px ;
+  width: 450px;
 }
 .classXeoto img {
-  height :450px;
+  height: 450px;
 }
 .theme {
   font-weight: bold;
   text-align: center;
   font-size: larger;
 }
-.ter  {
+.ter {
   font-size: large;
-  font-style:oblique;
+  font-style: oblique;
 }
 .text {
-  color :green  ;
+  color: green;
   text-decoration: none;
 }
-.noidung1{
+.noidung1 {
   font-weight: bold;
-  font-size:large;
+  font-size: large;
 }
-.noidung2{
-  font-weight:bold;
-
+.noidung2 {
+  font-weight: bold;
 }
