@@ -60,3 +60,54 @@ pre {
     margin: 0;
   }
 }
+/* 1.1 & 1.2 */
+.content-1 {
+  text-align: center;
+  font-weight: bold;
+  font-size:larger;
+}
+.content-2{
+  font-weight: bold;
+  color :#1a73e8;
+}
+.content-3{
+   font-weight: bold;
+}
+.oop {
+  font-size:larger;
+  
+}
+.oop li {
+  margin-top: 10px ;
+}
+.noidung  {
+  font-weight:bold;
+  color :#1a73e8;
+}
+.truutuong img {
+  width :450px ;
+}
+.classXeoto img {
+  height :450px;
+}
+.theme {
+  font-weight: bold;
+  text-align: center;
+  font-size: larger;
+}
+.ter  {
+  font-size: large;
+  font-style:oblique;
+}
+.text {
+  color :green  ;
+  text-decoration: none;
+}
+.noidung1{
+  font-weight: bold;
+  font-size:large;
+}
+.noidung2{
+  font-weight:bold;
+
+}
