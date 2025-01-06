@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./code.css" />
     <style>
-        /* .container {
+      /* .container {
             max-width: 900px;
             margin: auto;
             background: #fff;
@@ -13,31 +13,31 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         } */
-        /* h1 {
+      /* h1 {
             font-size: 24px;
             text-align: center;
             color: black;
             margin-bottom: 20px;
             font-weight: bold; In đậm tiêu đề
         } */
-        /* h3 {
+      /* h3 {
             font-size: 18px;
             color: black;
             margin-top: 20px;
             font-weight: bold;
         } */
-        p {
-            line-height: 1.6;
-        }
-        pre {
-            border-radius: 10px; /* Bo góc của border */
-            /* padding: 10px; Thêm khoảng cách giữa nội dung và border */
-            width: 100%;
-            background-color: rgb(231, 233, 235);
-            color: black;
-            font-style: italic;
-          }
-        /* .code {
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        border-radius: 10px; /* Bo góc của border */
+        /* padding: 10px; Thêm khoảng cách giữa nội dung và border */
+        width: 100%;
+        background-color: rgb(231, 233, 235);
+        color: black;
+        font-style: italic;
+      }
+      /* .code {
             background-color: #f4f4f4;
             border-left: 4px solid #0073e6;
             padding: 10px;
@@ -46,56 +46,56 @@
             overflow-x: auto;
             border-radius: 5px;
         } */
-        .code {
-            background-color: #cdd9e5;
-            padding-top: 10px;
-            border-radius: 10px;
-            width: 65%;
-          }
-          .code-title {
-            padding-left: 10px;
-            font-style: italic;
-          }
-          .comment,
-        .string {
+      .code {
+        background-color: #cdd9e5;
+        padding-top: 10px;
+        border-radius: 10px;
+        width: 65%;
+      }
+      .code-title {
+        padding-left: 10px;
+        font-style: italic;
+      }
+      .comment,
+      .string {
         color: rgb(10, 89, 10);
-        }
-        .data-type,
-        .number {
+      }
+      .data-type,
+      .number {
         color: rgb(211, 46, 115);
-        }
-        .keyword {
+      }
+      .keyword {
         color: rgb(37, 113, 159);
-        }
-        .note {
-            background-color: #e7f3fe;
-            border-left: 6px solid #2196F3;
-            padding: 10px;
-            margin: 15px 0;
-            width: 65%;
-            border-radius: 10px;
-        }
-        .note b {
-            color: #0073e6;
-        }
-        .highlight {
-            color: #d9534f;
-            font-weight: bold;
-        }
+      }
+      .note {
+        background-color: #e7f3fe;
+        border-left: 6px solid #2196f3;
+        padding: 10px;
+        margin: 15px 0;
+        width: 65%;
+        border-radius: 10px;
+      }
+      .note b {
+        color: #0073e6;
+      }
+      .highlight {
+        color: #d9534f;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-content">
-        <h1 class="title">Giới thiệu về lớp (class) trong Java</h1>
-        
-        <h3><b>1. Ví dụ về lớp (class)</b></h3>
-        <!-- khung code -->
-        <div class="content">
-            <div class="code">
-                <!-- chữ code -->
-                <span class="code-title"><b>Code</b></span>
-                <!-- code bên trong khung code -->
-        <pre>
+      <h1 class="title">Introduction To Classes In Java</h1>
+
+      <h3><b>1. Ví dụ về lớp (class)</b></h3>
+      <!-- khung code -->
+      <div class="content">
+        <div class="code">
+          <!-- chữ code -->
+          <span class="code-title"><b>Code</b></span>
+          <!-- code bên trong khung code -->
+          <pre>
 
             class <span class="keyword">Student</span> {
                 <span class="data-type">String</span> <span class="keyword">name</span>;
@@ -116,31 +116,48 @@
                 }
             }
         </pre>
-              </div>
-              <p>Ví dụ này giúp bạn hiểu một số thành phần cơ bản của lớp (class):</p>
-              <div class="note">
-                  <p><b>Lớp (class):</b> Là nơi định nghĩa thông tin về các đối tượng. Bạn có thể hiểu lớp là một kiểu dữ liệu mà biến của kiểu này được coi như một đối tượng.</p>
-                  <p><b>Ví dụ:</b> Học sinh, giáo viên, xe ô tô, ...</p>
-              </div>
-              <div class="note">
-                  <p><b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ, <span class="keyword">student1</span> là một đối tượng đại diện cho thông tin của một học sinh.</p>
-              </div>
-              <div class="note">
-                  <p><b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ, <span class="keyword">name</span> và <span class="keyword">age</span> là hai thuộc tính của đối tượng học sinh.</p>
-              </div>
-              <div class="note">
-                  <p><b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ, <span class="keyword">display()</span> là một phương thức dùng để giới thiệu bản thân của học sinh.</p>
-              </div>
         </div>
+        <p>Ví dụ này giúp bạn hiểu một số thành phần cơ bản của lớp (class):</p>
+        <div class="note">
+          <p>
+            <b>Lớp (class):</b> Là nơi định nghĩa thông tin về các đối tượng.
+            Bạn có thể hiểu lớp là một kiểu dữ liệu mà biến của kiểu này được
+            coi như một đối tượng.
+          </p>
+          <p><b>Ví dụ:</b> Học sinh, giáo viên, xe ô tô, ...</p>
+        </div>
+        <div class="note">
+          <p>
+            <b>Đối tượng (object):</b> Là một thể hiện của lớp. Ví dụ,
+            <span class="keyword">student1</span> là một đối tượng đại diện cho
+            thông tin của một học sinh.
+          </p>
+        </div>
+        <div class="note">
+          <p>
+            <b>Thuộc tính (attribute):</b> Là các đặc điểm của đối tượng. Ví dụ,
+            <span class="keyword">name</span> và
+            <span class="keyword">age</span> là hai thuộc tính của đối tượng học
+            sinh.
+          </p>
+        </div>
+        <div class="note">
+          <p>
+            <b>Phương thức (method):</b> Là hành vi của đối tượng. Ví dụ,
+            <span class="keyword">display()</span> là một phương thức dùng để
+            giới thiệu bản thân của học sinh.
+          </p>
+        </div>
+      </div>
 
-        <h3><b>2. Cú pháp khai báo lớp</b></h3>
-        <div class="content">
-            <!-- khung code -->
+      <h3><b>2. Cú pháp khai báo lớp</b></h3>
+      <div class="content">
+        <!-- khung code -->
         <div class="code">
-            <!-- chữ code -->
-            <span class="code-title"><b>Code</b></span>
-            <!-- code bên trong khung code -->
-            <pre>
+          <!-- chữ code -->
+          <span class="code-title"><b>Code</b></span>
+          <!-- code bên trong khung code -->
+          <pre>
 
               class <span class=keyword>(Tên_Lớp)</span> {
                 <span class="comment">// Khai báo thuộc tính</span>
@@ -152,17 +169,17 @@
                   }
               }
             </pre>
-          </div>
         </div>
-    
-        <h3><b>3. Ví dụ khai báo lớp Student</b></h3>
-        <div class="content">
-             <!-- khung code -->
+      </div>
+
+      <h3><b>3. Ví dụ khai báo lớp Student</b></h3>
+      <div class="content">
+        <!-- khung code -->
         <div class="code">
-            <!-- chữ code -->
-            <span class="code-title"><b>Code</b></span>
-            <!-- code bên trong khung code -->
-            <pre>
+          <!-- chữ code -->
+          <span class="code-title"><b>Code</b></span>
+          <!-- code bên trong khung code -->
+          <pre>
 
               class <span class=keyword>Student</span> {
                 <span class="data-type">String</span> <span class="keyword">name</span>;
@@ -178,12 +195,15 @@
                   }
               }
           </pre>
-          </div>
         </div>
+      </div>
 
-        <h3><b>4. Tạo đối tượng từ lớp</b></h3>
-        <div class="content">
-            <p>Để tạo đối tượng từ lớp, bạn dùng từ khóa <span class="keyword">new</span>. Ví dụ:</p>
+      <h3><b>4. Tạo đối tượng từ lớp</b></h3>
+      <div class="content">
+        <p>
+          Để tạo đối tượng từ lớp, bạn dùng từ khóa
+          <span class="keyword">new</span>. Ví dụ:
+        </p>
         <!-- khung code -->
         <div class="code">
           <!-- chữ code -->
@@ -196,8 +216,7 @@
             s1.<span class="keyword">display()</span>;
           </pre>
         </div>
-        </div>
-
+      </div>
     </div>
-</body>
+  </body>
 </html>

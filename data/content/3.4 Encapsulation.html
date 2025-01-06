@@ -51,16 +51,16 @@
         font-style: italic;
       }
       .comment,
-        .string {
+      .string {
         color: rgb(10, 89, 10);
-        }
-        .data-type,
-        .number {
+      }
+      .data-type,
+      .number {
         color: rgb(211, 46, 115);
-        }
-        .keyword {
+      }
+      .keyword {
         color: rgb(37, 113, 159);
-        }
+      }
       .note {
         background-color: #e7f3fe;
         border-left: 6px solid #2196f3;
@@ -80,7 +80,7 @@
   </head>
   <body>
     <div class="container-content">
-      <h1 class="title">Tính đóng gói trong lập trình hướng đối tượng</h1>
+      <h1 class="title">Encapsulation In Object-Oriented Programming</h1>
       <p>
         Trong lập trình, <b>tính đóng gói</b> giúp bảo vệ dữ liệu và tránh truy
         cập trực tiếp đến các thuộc tính của đối tượng từ bên ngoài. <br />Điều
@@ -100,20 +100,20 @@
                 public <span class="data-type">int</span> <span class="keyword">age</span>;
                 public <span class="data-type">double</span> <span class="keyword">gpa</span>;
             }
-          </pre
-        >
+          </pre>
       </div>
       <p>
-        Trong ví dụ trên, các thuộc tính của lớp <span class="keyword">Student</span> đều là
-        <b>public</b>, dẫn tới các thuộc tính này có thể được truy xuất trực
-        tiếp từ nơi khác. <br />Trên thực tế, bạn nên hạn chế tối đa các biến có
-        phạm vi truy cập <b>public</b>, vì nó vi phạm tính đóng gói trong lập
-        trình hướng đối tượng.
+        Trong ví dụ trên, các thuộc tính của lớp
+        <span class="keyword">Student</span> đều là <b>public</b>, dẫn tới các
+        thuộc tính này có thể được truy xuất trực tiếp từ nơi khác. <br />Trên
+        thực tế, bạn nên hạn chế tối đa các biến có phạm vi truy cập
+        <b>public</b>, vì nó vi phạm tính đóng gói trong lập trình hướng đối
+        tượng.
       </p>
 
       <p>
-        Để đảm bảo tính đóng gói cho lớp <span class="keyword">Student</span>, bạn nên để phạm
-        vi truy cập của các thuộc tính là <b>private</b> <br />
+        Để đảm bảo tính đóng gói cho lớp <span class="keyword">Student</span>,
+        bạn nên để phạm vi truy cập của các thuộc tính là <b>private</b> <br />
         và truy xuất tới các thuộc tính này thông qua các phương thức
         <b>public</b> (gọi là các <i>setter</i>, <i>getter</i>) giống như sau:
       </p>
@@ -153,8 +153,7 @@
                     this.<span class="keyword">gpa</span> = <span class="keyword">gpa</span>;
                 }
             }
-          </pre
-        >
+          </pre>
       </div>
       <p>
         Với cách làm này, thông tin của đối tượng đã được ẩn đi. Bạn chỉ có thể
